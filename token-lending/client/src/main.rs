@@ -265,7 +265,7 @@ pub fn create_reserve(
             &collateral_supply_keypair,
             &liquidity_supply_keypair,
             &user_collateral_token_keypair,
-            &collateral_fees_receiver_keypair,
+            &collateral_fees_receiver_keypair, //added this to fix the signer error.  Not sure if this is ok.
         ],
         recent_blockhash,
     );
